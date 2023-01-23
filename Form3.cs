@@ -20,9 +20,9 @@ namespace bibliotekaDavid
 
         private void buttonUcitajKorisnik_Click(object sender, EventArgs e)
         {
-
+            XElement DrugiXML = XElement.Load(@"D:\NIOP\Knjiga.xml");
+            richTextBoxIspisKorisnik.Text = DrugiXML.ToString();
         }
-
         private void buttonUcitajKnjiga_Click(object sender, EventArgs e)
         {
             XElement PrviXML = XElement.Load(@"D:\NIOP\Knjiga.xml");

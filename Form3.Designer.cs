@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.richTextBoxIspisKorisnik = new System.Windows.Forms.RichTextBox();
             this.textBoxIDkorisnika = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,18 +59,19 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Upiši ID korisnika :";
+            this.label1.Text = "Upiši ime korisnika : ";
             // 
             // buttonUcitajKorisnik
             // 
+            this.buttonUcitajKorisnik.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonUcitajKorisnik.Location = new System.Drawing.Point(32, 296);
             this.buttonUcitajKorisnik.Name = "buttonUcitajKorisnik";
             this.buttonUcitajKorisnik.Size = new System.Drawing.Size(154, 62);
             this.buttonUcitajKorisnik.TabIndex = 3;
-            this.buttonUcitajKorisnik.Text = "PRIKAŽI PODATKE ZA KORISNIKA";
-            this.buttonUcitajKorisnik.UseVisualStyleBackColor = true;
+            this.buttonUcitajKorisnik.Text = "PRONAĐI KORISNIKA";
+            this.buttonUcitajKorisnik.UseVisualStyleBackColor = false;
             this.buttonUcitajKorisnik.Click += new System.EventHandler(this.buttonUcitajKorisnik_Click);
             // 
             // label2
@@ -77,9 +79,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(319, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Upiši ID knjige :";
+            this.label2.Text = "Upiši naziv knjige :";
             // 
             // textBoxIDknjige
             // 
@@ -98,12 +100,13 @@
             // 
             // buttonUcitajKnjiga
             // 
+            this.buttonUcitajKnjiga.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonUcitajKnjiga.Location = new System.Drawing.Point(349, 296);
             this.buttonUcitajKnjiga.Name = "buttonUcitajKnjiga";
             this.buttonUcitajKnjiga.Size = new System.Drawing.Size(154, 62);
             this.buttonUcitajKnjiga.TabIndex = 7;
-            this.buttonUcitajKnjiga.Text = "PRIKAŽI PODATKE ZA KNJIGU";
-            this.buttonUcitajKnjiga.UseVisualStyleBackColor = true;
+            this.buttonUcitajKnjiga.Text = "PRONAĐI KNJIGU";
+            this.buttonUcitajKnjiga.UseVisualStyleBackColor = false;
             this.buttonUcitajKnjiga.Click += new System.EventHandler(this.buttonUcitajKnjiga_Click);
             // 
             // Form3
@@ -119,6 +122,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxIDkorisnika);
             this.Controls.Add(this.richTextBoxIspisKorisnik);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "PREGLED";
             this.ResumeLayout(false);

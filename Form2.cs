@@ -41,6 +41,8 @@ namespace bibliotekaDavid
                 label4.Visible = false;
                 dateTimePicker1.Visible = false;
                 dateTimePicker2.Visible = false;
+                buttonUnesiPodatke.Visible = true;
+                buttonPosudiKnjigu.Visible = false;
             }
 
             if (novikorisnik == "STARI KORISNIK")
@@ -55,6 +57,8 @@ namespace bibliotekaDavid
                 label4.Visible = true;
                 dateTimePicker1.Visible = true;
                 dateTimePicker2.Visible = true;
+                buttonUnesiPodatke.Visible = false;
+                buttonPosudiKnjigu.Visible = true;
             }
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxImeKorisnika = new System.Windows.Forms.TextBox();
@@ -165,6 +166,7 @@
             this.buttonUnesiPodatke.TabIndex = 13;
             this.buttonUnesiPodatke.Text = "REGISTRIRAJ KORISNIKA";
             this.buttonUnesiPodatke.UseVisualStyleBackColor = true;
+            this.buttonUnesiPodatke.Visible = false;
             this.buttonUnesiPodatke.Click += new System.EventHandler(this.buttonUnesiPodatke_Click);
             // 
             // buttonPosudiKnjigu
@@ -197,8 +199,10 @@
             this.Controls.Add(this.textBoxImeKorisnika);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "UPIS";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
